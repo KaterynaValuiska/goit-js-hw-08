@@ -22,7 +22,6 @@ function onSubmitForm() {
     console.log(JSON.parse(localStorage.getItem(LOCALSTORAGE_KEY)));
     form.reset();
     localStorage.removeItem(LOCALSTORAGE_KEY); 
-
 }
 
 function updateOutput() {
