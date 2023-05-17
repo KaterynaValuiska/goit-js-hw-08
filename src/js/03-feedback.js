@@ -14,11 +14,13 @@ function onInputForm(evt) {
         message: form.elements.message.value,
     }
     const userForm = JSON.stringify(user);
-  localStorage.setItem(LOCALSTORAGE_KEY, userForm);
+    localStorage.setItem(LOCALSTORAGE_KEY, userForm);
+    updateOutput();
 }
 
-function onSubmitForm() {
+function onSubmitForm(evt) {
     evt.preventDefault();
+    
     console.log(JSON.parse(localStorage.getItem(LOCALSTORAGE_KEY)));
     form.reset();
     localStorage.removeItem(LOCALSTORAGE_KEY); 
