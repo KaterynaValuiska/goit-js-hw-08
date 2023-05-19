@@ -11,8 +11,9 @@ if (currentTime) {
 }
 
 
-function onTimeUpdate({ seconds }) {
-  localStorage.setItem(LOCALSTORAGE_KEY, seconds);
+function onTimeUpdate(event) {
+    const sec = event.seconds;  
+  localStorage.setItem(LOCALSTORAGE_KEY, sec);
 }
 
 
