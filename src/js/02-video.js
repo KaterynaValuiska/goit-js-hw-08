@@ -10,9 +10,8 @@ if (currentTime) {
   player.setCurrentTime(currentTime);
 }
 
-
 function onTimeUpdate(event) {
-    const sec = event.seconds;  
+  const sec = event.seconds;  
   localStorage.setItem(LOCALSTORAGE_KEY, sec);
 }
 
